@@ -29,14 +29,12 @@ public class MainApp {
          System.out.println();
       }
 
-      users = userService.userByModelAndSeries("Mercedes1", 111);
-      for (User user : users) {
-         System.out.println("Id = "+user.getId());
-         System.out.println("First Name = "+user.getFirstName());
-         System.out.println("Last Name = "+user.getLastName());
-         System.out.println("Email = "+user.getEmail());
-         System.out.println();
-      }
+      User usersMS = userService.userByModelAndSeries("Mercedes1", 111);
+         System.out.println("Id = "+usersMS.getId());
+         System.out.println("First Name = "+usersMS.getFirstName());
+         System.out.println("Last Name = "+usersMS.getLastName());
+         System.out.println("Email = "+usersMS.getEmail());
+
       //context.close();
    }
 }
